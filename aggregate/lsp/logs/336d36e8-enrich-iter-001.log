@@ -1,0 +1,64 @@
+[2026-04-09T18:18:25Z] === ENRICH ITERATION 1 START | repo=pytorch/vision sha=336d36e8 ===
+[2026-04-09T18:18:25Z] [iter=1] PHASE START: enrich repo=pytorch/vision sha=336d36e8 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/336d36e8-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/336d36e8db990a905498c73933e35231876e28bc.nq.gz
+[2026-04-09T18:18:25Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-09T18:19:06Z] [iter=1] AST store loaded triples=4578741 load_secs=39 mem_mb=916 MB
+[2026-04-09T18:19:06Z] [iter=1] Step 2: Finding LSP targets mem_mb=916 MB
+[2026-04-09T18:19:17Z] [iter=1] LSP targets found call_sites=34542 imports=1971 extends=366 implements=0 secs=11
+[2026-04-09T18:19:27Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=916 MB
+[2026-04-09T18:19:51Z] [iter=1] Position index built positions=307314 nodes_with_types=393395 secs=25 mem_mb=916 MB
+[2026-04-09T18:19:51Z] [iter=1] Step 3: Starting LSP resolution mem_mb=916 MB already_completed_types=[] already_completed_files=0
+[2026-04-09T18:19:51Z] [iter=1] Resolving target type target_type=call_site count=34542
+[2026-04-09T18:19:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.5 files_done=0 resolved=0 errors=0 current=torchvision/csrc/ops/cpu/roi_pool_kernel.cpp
+[2026-04-09T18:20:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.1 files_done=2 resolved=7 errors=20 current=torchvision/csrc/ops/cpu/deform_conv2d_kernel.cpp
+[2026-04-09T18:21:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=3 resolved=7 errors=37 current=torchvision/csrc/io/image/cuda/encode_jpegs_cuda.cpp
+[2026-04-09T18:23:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.4 files_done=5 resolved=53 errors=130 current=torchvision/csrc/ops/autograd/roi_pool_kernel.cpp
+[2026-04-09T18:24:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.1 files_done=12 resolved=74 errors=152 current=torchvision/csrc/ops/autograd/ps_roi_align_kernel.cpp
+[2026-04-09T18:25:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.7 files_done=16 resolved=82 errors=174 current=torchvision/csrc/ops/roi_align.cpp
+[2026-04-09T18:25:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.4 files_done=25 resolved=93 errors=194 current=torchvision/csrc/io/image/cpu/decode_gif.cpp
+[2026-04-09T18:26:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.2 files_done=28 resolved=118 errors=223 current=torchvision/csrc/ops/autograd/ps_roi_pool_kernel.cpp
+[2026-04-09T18:27:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.8 files_done=38 resolved=149 errors=242 current=torchvision/csrc/io/image/cpu/read_write_file.cpp
+[2026-04-09T18:28:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.6 files_done=49 resolved=204 errors=268 current=references/optical_flow/train.py
+[2026-04-09T18:31:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.7 files_done=50 resolved=248 errors=367 current=test/test_transforms_v2.py
+[2026-04-09T19:30:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.3 files_done=51 resolved=1062 errors=2295 current=torchvision/transforms/transforms.py
+[2026-04-09T19:34:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.2 files_done=52 resolved=1457 errors=2424 current=torchvision/models/vision_transformer.py
+[2026-04-09T19:36:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.4 files_done=53 resolved=1535 errors=2496 current=torchvision/transforms/v2/functional/_color.py
+[2026-04-09T19:45:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.9 files_done=54 resolved=1605 errors=2774 current=test/datasets_utils.py
+[2026-04-09T19:48:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=90.4 files_done=55 resolved=1747 errors=2885 current=test/test_transforms_tensor.py
+[2026-04-09T19:55:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.0 files_done=56 resolved=1854 errors=3103 current=test/test_transforms.py
+[2026-04-09T20:17:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=119.0 files_done=57 resolved=2378 errors=3816 current=torchvision/datasets/eurosat.py
+[2026-04-09T20:21:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=122.9 files_done=59 resolved=2466 errors=3945 current=torchvision/models/detection/mask_rcnn.py
+[2026-04-09T20:22:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=124.1 files_done=60 resolved=2491 errors=3984 current=torchvision/models/maxvit.py
+[2026-04-09T20:25:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=126.7 files_done=61 resolved=2583 errors=4068 current=references/optical_flow/transforms.py
+[2026-04-09T20:26:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=127.6 files_done=62 resolved=2661 errors=4098 current=references/depth/stereo/cascade_evaluation.py
+[2026-04-09T20:28:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=129.8 files_done=63 resolved=2700 errors=4168 current=torchvision/datasets/widerface.py
+[2026-04-09T20:29:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=130.7 files_done=64 resolved=2726 errors=4197 current=torchvision/transforms/functional.py
+[2026-04-09T20:33:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=135.3 files_done=65 resolved=3012 errors=4346 current=torchvision/transforms/v2/_augment.py
+[2026-04-09T20:34:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=136.2 files_done=66 resolved=3122 errors=4378 current=torchvision/models/video/mvit.py
+[2026-04-09T20:38:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=140.2 files_done=67 resolved=3235 errors=4507 current=test/builtin_dataset_mocks.py
+[2026-04-09T20:48:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=149.9 files_done=68 resolved=3507 errors=4823 current=torchvision/transforms/v2/_misc.py
+[2026-04-09T20:49:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=151.2 files_done=69 resolved=3594 errors=4864 current=torchvision/models/video/swin_transformer.py
+[2026-04-09T20:52:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=154.2 files_done=70 resolved=3660 errors=4961 current=test/test_functional_tensor.py
+[2026-04-09T21:02:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=163.9 files_done=71 resolved=3803 errors=5280 current=torchvision/ops/feature_pyramid_network.py
+[2026-04-09T21:03:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=164.7 files_done=72 resolved=3837 errors=5305 current=test/test_ops.py
+[2026-04-09T21:16:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=177.9 files_done=73 resolved=4257 errors=5736 current=torchvision/models/quantization/utils.py
+[2026-04-09T21:17:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=179.2 files_done=75 resolved=4300 errors=5776 current=test/test_transforms_video.py
+[2026-04-09T21:19:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=181.2 files_done=76 resolved=4354 errors=5842 current=test/test_datasets.py
+[2026-04-09T21:36:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=198.3 files_done=77 resolved=5054 errors=6398 current=torchvision/models/swin_transformer.py
+[2026-04-09T21:41:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=202.8 files_done=78 resolved=5151 errors=6543 current=torchvision/models/detection/ssd.py
+[2026-04-09T21:43:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=205.5 files_done=79 resolved=5269 errors=6634 current=torchvision/models/convnext.py
+[2026-04-09T21:46:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=207.6 files_done=80 resolved=5306 errors=6701 current=test/test_datasets_utils.py
+[2026-04-09T21:47:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=209.0 files_done=81 resolved=5357 errors=6746 current=torchvision/models/resnet.py
+[2026-04-09T21:51:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=212.6 files_done=82 resolved=5408 errors=6867 current=torchvision/tv_tensors/_dataset_wrapper.py
+[2026-04-09T21:53:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=214.6 files_done=83 resolved=5463 errors=6931 current=torchvision/datasets/cifar.py
+[2026-04-09T21:53:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=215.5 files_done=85 resolved=5503 errors=6960 current=references/classification/utils.py
+[2026-04-09T21:55:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=217.3 files_done=86 resolved=5598 errors=7021 current=torchvision/models/detection/fcos.py
+[2026-04-09T21:59:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=220.7 files_done=87 resolved=5693 errors=7132 current=torchvision/transforms/v2/_auto_augment.py
+[2026-04-09T22:00:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=222.5 files_done=88 resolved=5825 errors=7191 current=torchvision/models/googlenet.py
+[2026-04-09T22:03:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=224.7 files_done=89 resolved=5875 errors=7263 current=gallery/transforms/plot_transforms_illustrations.py
+[2026-04-09T22:05:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=227.2 files_done=90 resolved=5902 errors=7345 current=torchvision/models/densenet.py
+[2026-04-09T22:07:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=228.8 files_done=91 resolved=5956 errors=7398 current=torchvision/transforms/v2/functional/_meta.py
+[2026-04-09T22:14:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=236.1 files_done=92 resolved=6019 errors=7637 current=torchvision/datasets/fakedata.py
+[2026-04-09T22:18:35Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=240.2 files_completed=93 new_files_this_iter=93 mem_mb=1012 MB
+[2026-04-09T22:18:35Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/336d36e8db990a905498c73933e35231876e28bc.nq.gz triples=91222
+[2026-04-09T22:18:37Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-04-09T22:18:37Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=14410 elapsed_min=240.2 files_completed=93
