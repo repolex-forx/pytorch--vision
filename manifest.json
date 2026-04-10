@@ -5,8 +5,8 @@
   "versions": [
     {
       "commit": "336d36e8db990a905498c73933e35231876e28bc",
-      "parsed_at": "2026-04-09T17:53:39.785882+00:00",
-      "tag": "v0.26.0",
+      "parsed_at": "2026-04-10T06:06:04.575817+00:00",
+      "tag": "v0.26.0-rc6",
       "filetree": "filetree/336d36e8db990a905498c73933e35231876e28bc.nq.gz",
       "blobs": [
         "blob/6fd60791864485b0d7f6a3f04db485ea12ad9de0.nq.gz",
