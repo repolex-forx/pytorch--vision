@@ -1,0 +1,50 @@
+[2026-04-10T06:19:02Z] === ENRICH ITERATION 3 START | repo=pytorch/vision sha=336d36e8 ===
+[2026-04-10T06:19:02Z] [iter=3] PHASE START: enrich repo=pytorch/vision sha=336d36e8 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/336d36e8-enrich-iter-003.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/336d36e8db990a905498c73933e35231876e28bc.nq.gz
+[2026-04-10T06:19:02Z] [iter=3] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-10T06:19:42Z] [iter=3] AST store loaded triples=4578741 load_secs=38 mem_mb=1016 MB
+[2026-04-10T06:19:42Z] [iter=3] Step 2: Finding LSP targets mem_mb=1016 MB
+[2026-04-10T06:19:53Z] [iter=3] LSP targets found call_sites=34542 imports=1971 extends=366 implements=0 secs=11
+[2026-04-10T06:20:01Z] [iter=3] Loaded checkpoint partial graph triples=181884
+[2026-04-10T06:20:11Z] [iter=3] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1016 MB
+[2026-04-10T06:20:40Z] [iter=3] Position index built positions=307314 nodes_with_types=393395 secs=29 mem_mb=1359 MB
+[2026-04-10T06:20:40Z] [iter=3] Step 3: Starting LSP resolution mem_mb=1359 MB already_completed_types=[] already_completed_files=255
+[2026-04-10T06:20:40Z] [iter=3] Resolving target type target_type=call_site count=34542
+[2026-04-10T06:20:43Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=1.7 files_done=0 resolved=0 errors=0 current=torchvision/transforms/v2/_utils.py
+[2026-04-10T06:21:25Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=2.4 files_done=1 resolved=51 errors=20 current=scripts/collect_model_urls.py
+[2026-04-10T06:22:21Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=3.3 files_done=3 resolved=79 errors=51 current=references/similarity/loss.py
+[2026-04-10T06:23:15Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=4.2 files_done=4 resolved=85 errors=81 current=references/segmentation/transforms.py
+[2026-04-10T06:23:47Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=4.8 files_done=5 resolved=90 errors=98 current=references/classification/sampler.py
+[2026-04-10T06:25:01Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=6.0 files_done=8 resolved=150 errors=139 current=references/detection/presets.py
+[2026-04-10T06:26:06Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=7.1 files_done=9 resolved=155 errors=175 current=torchvision/ops/_box_convert.py
+[2026-04-10T06:26:42Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=7.7 files_done=10 resolved=172 errors=195 current=torchvision/ops/_utils.py
+[2026-04-10T06:27:16Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=8.2 files_done=11 resolved=192 errors=214 current=torchvision/transforms/_transforms_video.py
+[2026-04-10T06:28:14Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=9.2 files_done=13 resolved=224 errors=246 current=test/test_architecture_ops.py
+[2026-04-10T06:29:03Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=10.0 files_done=16 resolved=257 errors=273 current=gallery/others/plot_scripted_tensor_transforms.py
+[2026-04-10T06:29:40Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=10.6 files_done=17 resolved=280 errors=293 current=torchvision/datasets/fgvc_aircraft.py
+[2026-04-10T06:30:21Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=11.3 files_done=19 resolved=330 errors=316 current=torchvision/datasets/hmdb51.py
+[2026-04-10T06:31:16Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=12.2 files_done=22 resolved=361 errors=346 current=torchvision/transforms/_functional_video.py
+[2026-04-10T06:31:51Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=12.8 files_done=23 resolved=384 errors=365 current=references/depth/stereo/utils/norm.py
+[2026-04-10T06:32:29Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=13.5 files_done=26 resolved=422 errors=386 current=torchvision/datasets/sun397.py
+[2026-04-10T06:33:07Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=14.1 files_done=28 resolved=459 errors=407 current=torchvision/datasets/food101.py
+[2026-04-10T06:34:52Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=15.8 files_done=30 resolved=475 errors=465 current=test/preprocess-bench.py
+[2026-04-10T06:36:15Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=17.2 files_done=32 resolved=509 errors=511 current=torchvision/models/video/s3d.py
+[2026-04-10T06:37:19Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=18.3 files_done=33 resolved=533 errors=547 current=android/test_app/make_assets.py
+[2026-04-10T06:38:20Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=19.3 files_done=37 resolved=573 errors=580 current=torchvision/transforms/v2/functional/_temporal.py
+[2026-04-10T06:39:25Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=20.4 files_done=40 resolved=615 errors=616 current=references/depth/stereo/utils/metrics.py
+[2026-04-10T06:40:08Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=21.1 files_done=44 resolved=634 errors=640 current=torchvision/models/optical_flow/_utils.py
+[2026-04-10T06:40:42Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=21.7 files_done=49 resolved=667 errors=659 current=references/video_classification/presets.py
+[2026-04-10T06:41:13Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=22.2 files_done=50 resolved=667 errors=676 current=docs/source/beta_status.py
+[2026-04-10T06:41:45Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=22.7 files_done=54 resolved=678 errors=694 current=torchvision/ops/roi_pool.py
+[2026-04-10T06:42:21Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=23.3 files_done=58 resolved=696 errors=714 current=examples/cpp/script_model.py
+[2026-04-10T06:42:52Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=23.8 files_done=64 resolved=715 errors=731 current=torchvision/ops/__init__.py
+[2026-04-10T06:45:44Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=26.7 files_done=73 resolved=731 errors=819 current=android/test_app/app/src/main/java/org/pytorch/testapp/MainActivity.java
+[2026-04-10T06:46:29Z] [iter=3] HEARTBEAT target_type=call_site elapsed_min=27.5 files_done=74 resolved=733 errors=844 current=android/test_app/app/src/main/java/org/pytorch/testapp/BBox.java
+[2026-04-10T06:46:30Z] [iter=3] Target type resolved target_type=call_site resolved=734 errors=844 secs=1551 mem_mb=1360 MB
+[2026-04-10T06:46:30Z] [iter=3] Resolving target type target_type=import_statement count=1971
+[2026-04-10T06:46:44Z] [iter=3] Target type resolved target_type=import_statement resolved=309 errors=0 secs=14 mem_mb=1360 MB
+[2026-04-10T06:46:44Z] [iter=3] Resolving target type target_type=extends_clause count=366
+[2026-04-10T06:46:52Z] [iter=3] Target type resolved target_type=extends_clause resolved=28 errors=0 secs=9 mem_mb=1360 MB
+[2026-04-10T06:47:30Z] [iter=3] Step 5: Writing final enrichment file triples=285828
+[2026-04-10T06:47:36Z] [iter=3] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/336d36e8db990a905498c73933e35231876e28bc.nq.gz size_kb=6643
+[2026-04-10T06:47:36Z] [iter=3] Checkpoint cleared (enrichment complete)
+[2026-04-10T06:47:36Z] [iter=3] PHASE END: enrich elapsed_s=1713 elapsed_min=28.6 total_triples=285828
